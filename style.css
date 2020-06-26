@@ -1,0 +1,31 @@
+body {
+    height: 100%;
+    background-color: silver;
+    width: 1365px;
+    margin: 0;
+    padding: 0;
+}
+ header {
+     background-color: darksalmon;
+     height: 100px;
+ }
+    nav {
+        background-color: darkseagreen;
+        height: 50px;
+    }
+section {
+    background-color: deeppink;
+    height: 400px;
+    width: 1000px;
+    float: left;
+}
+aside {
+    background-color: goldenrod;
+    height: 400px;
+    width: 365px;
+    float: left;
+}
+footer {
+    background-color: indigo;
+    height: 100px;
+}

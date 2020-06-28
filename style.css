@@ -1,62 +1,79 @@
-*{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed&family=Roboto:ital,wght@0,400;1,900&display=swap');
 body {
     height: 100vh;
-    width: 100vw;
+    max-width: 100%;
     margin: 0;
     padding: 0;
     background: url(./img/ishan-seefromthesky-LNdpi8Yzi34-unsplash.jpg);
     background-repeat: no-repeat;
 }
-@media only screen and (min-width: 600px) {
-    section {width: 70%;}
-    aside {width: 30%}
-    section {display: column;}
+/* Media Queries: Tablet Landscape */
+@media screen and (max-width: 1060px) {
+    #section{
+        width: 67%;
+    }
+
+    #aside{
+        width: 30%;
+        margin-left: 3%;
+    }
+}
+
+/* Media Queries: Tabled Portrait */
+@media screen and (max-width: 768px) {
+    #section {
+        width: 100%;
+    }
+
+    #aside {
+        width: 100%;
+        margin: 0;
+        border: none;
+    }
 }
 
 header {
     width: 100vw;
-    padding: 0.3em;
+    padding: 0.2em 0 0.2em 0.2em;
     text-align: center;
     color: #e01212fd;
     text-transform: uppercase;
     font-size: 1.5em;
     margin-bottom: 0em;
    background: url("./img/chen-mizrach-jL6PTWI7h18-unsplash.jpg");
-   background-repeat: no-repeat;
    background-size: cover;
-   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   background-repeat: no-repeat;
+   font-family: 'Roboto', sans-serif;
    font-style: italic;
 }
 
 header :hover {
-    color: navajowhite;
+    color: #4D7298;
 }
 
 .nav-bar {
     width: 100vw;
-    padding: 0.4em;
+    padding: 0.1em;
     text-align: left;
     font-size: 1.5em;
     font-weight: bold;
     display: flex;
     flex-direction: row; 
-    background: rgb(212, 200, 21);
+    background: #859684;
 }
 a.link {
     text-decoration: none;
     color: rgb(41, 27, 27);
-    background: rgb(212, 200, 21);
+    background: #859684;
     margin-left: 0;
-    padding-left: 0;
+    padding-left: 20px 0;
      width: 60vw;
      text-align: center;
 }
 .nav-bar :hover {
     color: rgb(227, 233, 227);
-    background: rgba(121, 15, 68, 0.582);
-    border-bottom: 5px solid goldenrod;
+    background: #2E8035;
+    border-bottom: 5px solid #28E050;
     flex-grow: 2em;
 }
 
@@ -67,7 +84,9 @@ section {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto auto; 
-    text-align: center;   
+    text-align: center;  
+    box-sizing: border-box; 
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
 }
 .section_img img{
     height: 300px;
@@ -83,16 +102,16 @@ section {
     margin-left: 5px;
 }
 aside {
-    background-color: goldenrod;
-    padding: 10px 0 20px 20px;
+    background-color: #99C1C4;
+    padding: 0 0 20px 20px;
     width: 330px;
     float: left;
     text-align: left;
-    font-size: 1em;
+    font-size: 1.2em;
     word-spacing: 5px;
     line-height: 50px;
     font-weight: bold;
-    color: midnightblue;
+    color: #2F3E46;
 }
 #car {
     width: 300px;
@@ -106,13 +125,39 @@ aside {
 .detail {
     text-decoration: none;
     font-style: italic;
+    font-weight: bolder;
+    font-size: 1.25em;
 }
 footer {
     background-color: grey;
-    height: 100px;
+    padding: 0 10px 50px 0;
     text-align: center;
 }
 .foot {
-    margin-top: 50px;
+    margin-top: 30px;
     transform: translate(0, 50px);
+}
+footer a {
+    position: relative;
+    color: navy;
+    font-size: 1.5em;
+}
+/* about image banner */
+#about-img {
+    width: 900px;
+}
+/* contact banner */
+#contact-section img {
+    width: 900px;
+    margin-top: 0;
+    height: 400px;
+}
+/* form stylying */
+#email, #name, #phone, #address {
+    padding: 5px;
+    width: 350px;
+}
+#submit {
+    padding: 5px;
+    width: 371px;
 }
